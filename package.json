@@ -1,0 +1,30 @@
+{
+  "name": "cypresslivecoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sample:test": "cypress run --spec 'cypress/e2e/Sanity/Login_spec.js' --browser chrome --headed",
+    "e2e:chrome": "cypress run --browser chrome",
+    "e2e:firefox": "cypress run --browser firefox",
+    "test:login:tag" : "cypress run --env grepTags=@Login"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/grep": "^4.0.2",
+    "@simonsmith/cypress-image-snapshot": "^9.0.3",
+    "@testing-library/cypress": "^10.0.2",
+    "cypress": "^13.11.0",
+    "cypress-network-idle": "^1.14.2",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-real-events": "^1.8.1",
+    "cypress-tags": "^1.2.2",
+    "cypress-terminal-report": "^5.3.6",
+    "cypress-wait-until": "^1.7.2",
+    "cypress-xpath": "^2.0.1",
+    "eslint-plugin-cypress": "^3.3.0"
+  }
+}
